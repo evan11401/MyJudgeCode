@@ -14,10 +14,10 @@ main(){
 	while(cin>>n>>x>>y){
 		cin>>num;
 		int ans=0;
-		reverse(num.begin(),num.end());
+		//reverse(num.begin(),num.end());
 		//cout<<x<<y<<endl;
-		for(i=0;i<=x;i++){
-			if(i==y||i==x){			
+		for(i=n-x;i<n;i++){
+			if(i==n-y-1){			
 				if(num[i]!='1')ans++;
 			}else{			
 				if(num[i]!='0')ans++;
